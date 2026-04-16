@@ -57,7 +57,14 @@ const walletOptions = [
     id: "metamask",
     name: "MetaMask",
     description: "Popular browser wallet for Ethereum and EVM chains.",
-    match: (provider) => Boolean(provider?.isMetaMask),
+    match: (provider) =>
+      Boolean(
+        provider?.isMetaMask &&
+          !provider?.isRabby &&
+          !provider?.isCoinbaseWallet &&
+          !provider?.isOkxWallet &&
+          !provider?.isOKExWallet,
+      ),
   },
   {
     id: "okx",
@@ -240,6 +247,7 @@ async function connectWallet(option) {
   }
 
   try {
+    logMint(`Opening ${selectedOption.name}...`);
     const chainId = await provider.request({ method: "eth_chainId" });
     if (chainId !== mintConfig.chainId) {
       logMint(`Wallet connected on ${chainId}. Switch to ${mintConfig.chainName} before minting.`);
