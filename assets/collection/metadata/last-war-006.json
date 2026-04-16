@@ -1,0 +1,105 @@
+{
+  "name": "Last War #006",
+  "description": "Legend says cold wallets still sleep beneath the pyramids, and that rumor turned him into the most dangerous diver in the wastes.",
+  "image": "./assets/collection/images/last-war-006.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Roach Syndicate"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Vault Diver"
+    },
+    {
+      "trait_type": "Species",
+      "value": "roach"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Salvage Hood"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Salvage Torch Stock"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Pyramid Storm"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Shell Engraving"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Solar Haze"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 105.59
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Legendary"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 6
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Roach Syndicate",
+      "occurrence": 1060,
+      "multiplier": 1,
+      "contribution": 4.38
+    },
+    {
+      "trait_type": "Role",
+      "value": "Vault Diver",
+      "occurrence": 54,
+      "multiplier": 1.35,
+      "contribution": 19.84
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Salvage Hood",
+      "occurrence": 72,
+      "multiplier": 1.2,
+      "contribution": 16.31
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Salvage Torch Stock",
+      "occurrence": 64,
+      "multiplier": 1.1,
+      "contribution": 15.45
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Pyramid Storm",
+      "occurrence": 34,
+      "multiplier": 1.15,
+      "contribution": 18.97
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Shell Engraving",
+      "occurrence": 70,
+      "multiplier": 1.4,
+      "contribution": 19.18
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Solar Haze",
+      "occurrence": 74,
+      "multiplier": 0.85,
+      "contribution": 11.46
+    }
+  ]
+}

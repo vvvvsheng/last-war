@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last War | Mint Terminal</title>
+    <meta
+      name="description"
+      content="Mint terminal for Last War. Connect wallet, review launch rules, and prepare the anti-war drop for live contract wiring."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">LW</span>
+        <span class="brand-copy">
+          <strong>Last War</strong>
+          <small>Mint Terminal</small>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="./index.html#lore">Lore</a>
+        <a href="./index.html#collection">Works</a>
+        <a href="./index.html#rarity">Rarity</a>
+        <a href="./mint.html">Mint</a>
+      </nav>
+      <a class="ghost-button" href="./index.html">Back to Site</a>
+    </header>
+
+    <main class="mint-main">
+      <section class="mint-hero">
+        <div class="mint-hero-copy">
+          <p class="eyebrow">Launch interface / wallet ready / contract hand-off prepared</p>
+          <h1>Mint Terminal</h1>
+          <p class="hero-lead">
+            This page is built like a real drop front-end: wallet connection, phase display, pricing logic, quantity controls, sold progress, and a clear place to wire the deployed contract.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#mint-console">Open Mint Console</a>
+            <a class="secondary-button" href="./docs/rarity-system.md">Read Rarity Rules</a>
+          </div>
+        </div>
+        <article class="mint-summary-card">
+          <span class="collection-tag" id="mint-phase-badge">Public Mint</span>
+          <h2>Drop Parameters</h2>
+          <dl class="mint-summary-list">
+            <div>
+              <dt>Collection Size</dt>
+              <dd id="mint-supply">2140</dd>
+            </div>
+            <div>
+              <dt>Live Price</dt>
+              <dd id="mint-price">0.08 ETH</dd>
+            </div>
+            <div>
+              <dt>Wallet Limit</dt>
+              <dd id="mint-wallet-limit">3</dd>
+            </div>
+            <div>
+              <dt>Target Chain</dt>
+              <dd id="mint-chain">Ethereum Mainnet</dd>
+            </div>
+          </dl>
+          <div class="mint-progress-wrap">
+            <div class="mint-progress-topline">
+              <span>Minted</span>
+              <strong id="mint-progress-copy">842 / 2140</strong>
+            </div>
+            <div class="mint-progress-bar" aria-hidden="true">
+              <span id="mint-progress-fill"></span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="mint-console-section" id="mint-console">
+        <article class="mint-console-card">
+          <div class="panel-heading">
+            <span class="section-index">01</span>
+            <h2>Mint Console</h2>
+          </div>
+
+          <div class="mint-wallet-row">
+            <div>
+              <span class="mint-console-label">Wallet</span>
+              <strong id="wallet-address">Not connected</strong>
+            </div>
+            <button class="primary-button" id="connect-wallet-button" type="button">
+              Connect Wallet
+            </button>
+          </div>
+
+          <div class="mint-console-grid">
+            <article class="mint-console-panel">
+              <span class="mint-console-label">Launch Phase</span>
+              <strong id="phase-name">Public Mint</strong>
+              <p id="phase-copy">Public mint is active. Wallet limit and price are enforced at the interface level.</p>
+            </article>
+            <article class="mint-console-panel">
+              <span class="mint-console-label">Countdown</span>
+              <strong id="countdown-copy">Loading</strong>
+              <p id="countdown-caption">Counts down to the configured public mint date.</p>
+            </article>
+          </div>
+
+          <div class="quantity-panel">
+            <span class="mint-console-label">Mint Quantity</span>
+            <div class="quantity-stepper">
+              <button class="quantity-button" id="decrease-qty" type="button">-</button>
+              <strong id="mint-quantity">1</strong>
+              <button class="quantity-button" id="increase-qty" type="button">+</button>
+            </div>
+            <div class="mint-total-row">
+              <span>Total</span>
+              <strong id="mint-total">0.08 ETH</strong>
+            </div>
+          </div>
+
+          <dl class="mint-config-table">
+            <div>
+              <dt>Contract</dt>
+              <dd id="contract-address">TBD</dd>
+            </div>
+            <div>
+              <dt>Mint Function</dt>
+              <dd id="mint-function">mint(uint256)</dd>
+            </div>
+            <div>
+              <dt>Allowlist Price</dt>
+              <dd id="allowlist-price">0.05 ETH</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd id="contract-status">Awaiting deployed contract details</dd>
+            </div>
+          </dl>
+
+          <button class="primary-button mint-action-button" id="mint-button" type="button">
+            Mint Last War
+          </button>
+          <p class="mint-helper-copy" id="mint-helper-copy">
+            Connect a wallet to validate the interface. Replace the placeholder contract settings in <code>mint.js</code> to go live.
+          </p>
+
+          <div class="mint-log">
+            <span class="mint-console-label">Terminal Output</span>
+            <pre id="mint-log-output">Mint terminal initialized.</pre>
+          </div>
+        </article>
+
+        <aside class="mint-side-column">
+          <article class="panel">
+            <div class="panel-heading">
+              <span class="section-index">02</span>
+              <h2>Go-Live Checklist</h2>
+            </div>
+            <ul class="feature-list">
+              <li>Deploy ERC-721 or ERC-1155 contract</li>
+              <li>Replace contract address placeholder in <code>mint.js</code></li>
+              <li>Wire ABI-driven mint call or mint service endpoint</li>
+              <li>Update GitHub, socials, chain explorer, and metadata base URI</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <span class="section-index">03</span>
+              <h2>Top Rare Picks</h2>
+            </div>
+            <div class="mint-preview-grid" id="mint-preview-grid"></div>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Last War</strong>
+        <p>The mint interface is ready for contract hand-off.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="./docs/rarity-system.md">Rarity Rules</a>
+        <a href="./scripts/generate-collection.mjs">Generator</a>
+      </div>
+    </footer>
+
+    <script src="./assets/collection/manifest.js"></script>
+    <script src="./mint.js"></script>
+  </body>
+</html>

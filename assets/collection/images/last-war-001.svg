@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-001" x1="160" y1="120" x2="1040" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101a10"/>
+      <stop offset="1" stop-color="#27441f"/>
+    </linearGradient>
+    <radialGradient id="glow-001" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(530 416) rotate(90) scale(420 360)">
+      <stop stop-color="#d2ff58" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#d2ff58" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-001" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" rx="56" fill="url(#bg-001)"/>
+  <path d="M0 972L190 924L288 1036L0 1200V972Z" fill="#f46f34" opacity="0.14"/>
+  <path d="M1120 0L1200 0V310L1028 220Z" fill="#f1b64c" opacity="0.1"/>
+  <circle cx="534" cy="420" r="354" fill="url(#glow-001)"/>
+  <g opacity="0.55" fill="#d2ff58"><circle cx="280" cy="236" r="12"/><circle cx="760" cy="290" r="10"/><circle cx="920" cy="164" r="8"/><circle cx="860" cy="920" r="16"/></g>
+  <g opacity="0.26"><path d="M885 360L945 470L897 492L835 381Z" fill="#f46f34"/><path d="M805 840L950 420L1015 448L900 870Z" fill="#27441f"/><path d="M850 350L940 326L914 270L866 298Z" fill="#f46f34"/></g>
+  <g opacity="0.18">
+    <path d="M54 944H1146" stroke="#f1b64c" stroke-width="16" stroke-linecap="round" stroke-dasharray="22 28"/>
+    <path d="M0 1142H1200" stroke="#f46f34" stroke-width="24"/>
+  </g>
+  <g filter="url(#soft-001)" opacity="0.22">
+    <ellipse cx="560" cy="980" rx="274" ry="70" fill="#000"/>
+  </g>
+  <g><path d="M410 250L452 170L496 260L550 166L585 260L645 180L670 288H390Z" fill="#d2ff58" stroke="#101010" stroke-width="12"/></g>
+  <g>
+      <g>
+        <circle cx="406" cy="352" r="82" fill="#f46f34" stroke="#121212" stroke-width="14"/>
+        <circle cx="654" cy="352" r="82" fill="#f46f34" stroke="#121212" stroke-width="14"/>
+        <path d="M444 630C356 594 332 500 374 410C416 324 520 286 620 320C720 356 786 466 752 578C718 692 574 746 444 630Z" fill="#f46f34" stroke="#121212" stroke-width="16"/>
+        <ellipse cx="532" cy="430" rx="176" ry="146" fill="#d2ff58" opacity="0.72"/>
+        <path d="M426 678C464 636 594 636 638 678V818H426Z" fill="#d2ff58" opacity="0.9" stroke="#121212" stroke-width="12"/>
+        <ellipse cx="476" cy="438" rx="34" ry="56" fill="#fff"/>
+        <ellipse cx="582" cy="438" rx="34" ry="56" fill="#fff"/>
+        <circle cx="476" cy="434" r="14" fill="#121212"/>
+        <circle cx="582" cy="434" r="14" fill="#121212"/>
+        <ellipse cx="530" cy="540" rx="62" ry="46" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+        <path d="M470 540H590" stroke="#121212" stroke-width="10" stroke-linecap="round"/>
+        <path d="M340 554C278 614 252 702 264 790" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M722 550C784 608 814 698 800 790" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M386 724C322 780 318 878 382 954" stroke="#ffd9cc" stroke-width="18" stroke-linecap="round"/>
+        <path d="M676 724C742 778 744 874 680 950" stroke="#ffd9cc" stroke-width="18" stroke-linecap="round"/>
+        <circle cx="286" cy="790" r="24" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+        <circle cx="786" cy="790" r="24" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+      </g>
+    </g>
+  <g><g transform="translate(790 620)"><rect x="-8" y="-170" width="16" height="290" rx="8" fill="#f46f34"/><path d="M8 -152L160 -118L62 -42L8 -60Z" fill="#f1b64c"/></g></g>
+  <g><g><circle cx="486" cy="392" r="40" fill="#f1b64c"/><path d="M480 366V418M496 366V418M462 378H508C522 378 530 386 530 398C530 410 522 418 506 418H462M462 378H502C516 378 524 370 524 358C524 346 514 338 498 338H462" stroke="#111" stroke-width="12" stroke-linecap="round"/></g></g>
+  <g opacity="0.9">
+    <rect x="74" y="72" width="292" height="92" rx="24" fill="rgba(7, 7, 7, 0.42)"/>
+    <text x="104" y="126" fill="#f1b64c" font-size="52" font-family="Arial, sans-serif" font-weight="700">LAST WAR #001</text>
+  </g>
+  <g opacity="0.88">
+    <rect x="76" y="1028" width="430" height="88" rx="22" fill="rgba(7, 7, 7, 0.46)"/>
+    <text x="104" y="1084" fill="#d2ff58" font-size="34" font-family="Arial, sans-serif" font-weight="700">BANNER KEEPER</text>
+  </g>
+</svg>

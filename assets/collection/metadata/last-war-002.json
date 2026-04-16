@@ -1,0 +1,105 @@
+{
+  "name": "Last War #002",
+  "description": "He preaches from the deepest metro ruin and swears the last bitcoin will resurrect inside a black-market shrine.",
+  "image": "./assets/collection/images/last-war-002.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Roach Syndicate"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Gas Priest"
+    },
+    {
+      "trait_type": "Species",
+      "value": "roach"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Gas Veil"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Stone Hammer"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Collapsed Metro Gate"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ritual Medallion"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Toxic Vapor"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 96.68
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Epic"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 9
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Roach Syndicate",
+      "occurrence": 1060,
+      "multiplier": 1,
+      "contribution": 4.38
+    },
+    {
+      "trait_type": "Role",
+      "value": "Gas Priest",
+      "occurrence": 58,
+      "multiplier": 1.35,
+      "contribution": 19.47
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Gas Veil",
+      "occurrence": 62,
+      "multiplier": 1.2,
+      "contribution": 17
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Stone Hammer",
+      "occurrence": 90,
+      "multiplier": 1.1,
+      "contribution": 14.01
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Collapsed Metro Gate",
+      "occurrence": 120,
+      "multiplier": 1.15,
+      "contribution": 13.39
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ritual Medallion",
+      "occurrence": 86,
+      "multiplier": 1.4,
+      "contribution": 18.07
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Toxic Vapor",
+      "occurrence": 104,
+      "multiplier": 0.85,
+      "contribution": 10.36
+    }
+  ]
+}

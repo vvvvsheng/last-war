@@ -1,0 +1,11 @@
+{
+  "name": "last-war",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Last War NFT static site and mint terminal",
+  "scripts": {
+    "generate": "node ./scripts/generate-collection.mjs",
+    "serve": "node ./scripts/serve.mjs",
+    "start": "node ./scripts/serve.mjs"
+  }
+}

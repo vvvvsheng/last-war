@@ -1,0 +1,536 @@
+{
+  "collection": "Last War",
+  "supply": 2140,
+  "rarityBands": [
+    {
+      "tier": "Mythic",
+      "min": 112
+    },
+    {
+      "tier": "Legendary",
+      "min": 102
+    },
+    {
+      "tier": "Epic",
+      "min": 94
+    },
+    {
+      "tier": "Rare",
+      "min": 86
+    },
+    {
+      "tier": "Uncommon",
+      "min": 80
+    },
+    {
+      "tier": "Survivor",
+      "min": 0
+    }
+  ],
+  "traitCategories": [
+    {
+      "category": "species",
+      "multiplier": 1,
+      "values": [
+        {
+          "name": "rat",
+          "label": "Rat Dominion",
+          "count": 1080
+        },
+        {
+          "name": "roach",
+          "label": "Roach Syndicate",
+          "count": 1060
+        }
+      ]
+    },
+    {
+      "category": "role",
+      "multiplier": 1.35,
+      "values": [
+        {
+          "name": "Banner Keeper",
+          "label": "Banner Keeper",
+          "count": 74
+        },
+        {
+          "name": "Gas Priest",
+          "label": "Gas Priest",
+          "count": 58
+        },
+        {
+          "name": "Ash Miner",
+          "label": "Ash Miner",
+          "count": 168
+        },
+        {
+          "name": "Signal Heretic",
+          "label": "Signal Heretic",
+          "count": 62
+        },
+        {
+          "name": "Warlord of Dust",
+          "label": "Warlord of Dust",
+          "count": 28
+        },
+        {
+          "name": "Vault Diver",
+          "label": "Vault Diver",
+          "count": 54
+        },
+        {
+          "name": "Oracle of Rust",
+          "label": "Oracle of Rust",
+          "count": 42
+        },
+        {
+          "name": "Neon Scavenger",
+          "label": "Neon Scavenger",
+          "count": 156
+        },
+        {
+          "name": "Relic Courier",
+          "label": "Relic Courier",
+          "count": 118
+        },
+        {
+          "name": "Ash General",
+          "label": "Ash General",
+          "count": 34
+        },
+        {
+          "name": "Archive Smuggler",
+          "label": "Archive Smuggler",
+          "count": 66
+        },
+        {
+          "name": "Temple Breaker",
+          "label": "Temple Breaker",
+          "count": 48
+        }
+      ]
+    },
+    {
+      "category": "headgear",
+      "multiplier": 1.2,
+      "values": [
+        {
+          "name": "spike-crown",
+          "label": "Spike Crown",
+          "count": 44
+        },
+        {
+          "name": "gas-veil",
+          "label": "Gas Veil",
+          "count": 62
+        },
+        {
+          "name": "miner-cap",
+          "label": "Miner Cap",
+          "count": 180
+        },
+        {
+          "name": "coil-halo",
+          "label": "Coil Halo",
+          "count": 38
+        },
+        {
+          "name": "bone-crown",
+          "label": "Bone Crown",
+          "count": 26
+        },
+        {
+          "name": "salvage-hood",
+          "label": "Salvage Hood",
+          "count": 72
+        },
+        {
+          "name": "oracle-wrap",
+          "label": "Oracle Wrap",
+          "count": 56
+        },
+        {
+          "name": "street-visor",
+          "label": "Street Visor",
+          "count": 128
+        },
+        {
+          "name": "mail-hood",
+          "label": "Mail Hood",
+          "count": 104
+        },
+        {
+          "name": "steel-helmet",
+          "label": "Steel Helmet",
+          "count": 52
+        },
+        {
+          "name": "scribe-cloth",
+          "label": "Scribe Cloth",
+          "count": 88
+        },
+        {
+          "name": "temple-rig",
+          "label": "Temple Rig",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "category": "weapon",
+      "multiplier": 1.1,
+      "values": [
+        {
+          "name": "骨旗杆",
+          "label": "Bone Banner",
+          "count": 40
+        },
+        {
+          "name": "石锤",
+          "label": "Stone Hammer",
+          "count": 90
+        },
+        {
+          "name": "锈扳手",
+          "label": "Rust Wrench",
+          "count": 142
+        },
+        {
+          "name": "木棍",
+          "label": "Club",
+          "count": 184
+        },
+        {
+          "name": "骨矛",
+          "label": "Bone Spear",
+          "count": 48
+        },
+        {
+          "name": "焊枪枪托",
+          "label": "Salvage Torch Stock",
+          "count": 64
+        },
+        {
+          "name": "石斧",
+          "label": "Stone Axe",
+          "count": 76
+        },
+        {
+          "name": "钢管",
+          "label": "Steel Pipe",
+          "count": 172
+        },
+        {
+          "name": "短棍",
+          "label": "Short Baton",
+          "count": 136
+        },
+        {
+          "name": "旗杆长矛",
+          "label": "Banner Lance",
+          "count": 34
+        },
+        {
+          "name": "木杖",
+          "label": "Wood Staff",
+          "count": 126
+        },
+        {
+          "name": "碎石锤",
+          "label": "Breaker Hammer",
+          "count": 58
+        }
+      ]
+    },
+    {
+      "category": "backdrop",
+      "multiplier": 1.15,
+      "values": [
+        {
+          "name": "自由女神残骸",
+          "label": "Statue of Liberty Ruin",
+          "count": 28
+        },
+        {
+          "name": "地铁坍塌口",
+          "label": "Collapsed Metro Gate",
+          "count": 120
+        },
+        {
+          "name": "比特币矿坑",
+          "label": "Bitcoin Pit",
+          "count": 76
+        },
+        {
+          "name": "破碎征兵广告",
+          "label": "Broken Draft Billboard",
+          "count": 66
+        },
+        {
+          "name": "长城残段",
+          "label": "Broken Great Wall",
+          "count": 30
+        },
+        {
+          "name": "金字塔风沙",
+          "label": "Pyramid Storm",
+          "count": 34
+        },
+        {
+          "name": "坦克坟场",
+          "label": "Tank Graveyard",
+          "count": 62
+        },
+        {
+          "name": "霓虹废墟",
+          "label": "Neon Ruin",
+          "count": 170
+        },
+        {
+          "name": "坠毁飞机",
+          "label": "Crashed Aircraft",
+          "count": 84
+        },
+        {
+          "name": "核反应堆遗址",
+          "label": "Reactor Wreck",
+          "count": 36
+        },
+        {
+          "name": "图书馆焦土",
+          "label": "Burned Library",
+          "count": 54
+        },
+        {
+          "name": "废土神庙",
+          "label": "Wasteland Temple",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "category": "bitcoinForm",
+      "multiplier": 1.4,
+      "values": [
+        {
+          "name": "瞳孔币环",
+          "label": "Ocular Halo",
+          "count": 40
+        },
+        {
+          "name": "胸前祭币",
+          "label": "Ritual Medallion",
+          "count": 86
+        },
+        {
+          "name": "肩部纹章",
+          "label": "Shoulder Sigil",
+          "count": 138
+        },
+        {
+          "name": "背后神环",
+          "label": "Rear Halo",
+          "count": 22
+        },
+        {
+          "name": "王冠碎片",
+          "label": "Crown Fragment",
+          "count": 26
+        },
+        {
+          "name": "腹甲刻印",
+          "label": "Shell Engraving",
+          "count": 70
+        },
+        {
+          "name": "耳侧铭牌",
+          "label": "Ear Plate",
+          "count": 94
+        },
+        {
+          "name": "尾端吊币",
+          "label": "Tail Coin",
+          "count": 126
+        },
+        {
+          "name": "胸前吊坠",
+          "label": "Cold Wallet Pendant",
+          "count": 116
+        },
+        {
+          "name": "眼部植入",
+          "label": "Ocular Implant",
+          "count": 32
+        },
+        {
+          "name": "背后圣币",
+          "label": "Saint Coin",
+          "count": 34
+        },
+        {
+          "name": "甲壳烙印",
+          "label": "Carapace Brand",
+          "count": 48
+        }
+      ]
+    },
+    {
+      "category": "aura",
+      "multiplier": 0.85,
+      "values": [
+        {
+          "name": "acid",
+          "label": "Acid Bloom",
+          "count": 92
+        },
+        {
+          "name": "toxic",
+          "label": "Toxic Vapor",
+          "count": 104
+        },
+        {
+          "name": "ember",
+          "label": "Ember Dust",
+          "count": 146
+        },
+        {
+          "name": "violet",
+          "label": "Signal Violet",
+          "count": 38
+        },
+        {
+          "name": "sand",
+          "label": "Sand Wake",
+          "count": 60
+        },
+        {
+          "name": "sun",
+          "label": "Solar Haze",
+          "count": 74
+        },
+        {
+          "name": "cyan",
+          "label": "Cyan Static",
+          "count": 54
+        },
+        {
+          "name": "neon",
+          "label": "Neon Spill",
+          "count": 160
+        },
+        {
+          "name": "mist",
+          "label": "Archive Mist",
+          "count": 120
+        },
+        {
+          "name": "smog",
+          "label": "Reactor Smog",
+          "count": 42
+        },
+        {
+          "name": "archive",
+          "label": "Archive Dust",
+          "count": 84
+        },
+        {
+          "name": "shrine",
+          "label": "Shrine Glow",
+          "count": 46
+        }
+      ]
+    }
+  ],
+  "topRanked": [
+    {
+      "id": "005",
+      "name": "Last War #005",
+      "faction": "Rat Dominion",
+      "role": "Warlord of Dust",
+      "weapon": "Bone Spear",
+      "backdrop": "Broken Great Wall",
+      "bitcoinForm": "Crown Fragment",
+      "description": "He claims the broken Great Wall as a throne and stitches his crown from spent shells, dead coins, and bone.",
+      "image": "./assets/collection/images/last-war-005.svg",
+      "rarityScore": 121.6,
+      "rarityTier": "Mythic",
+      "rarityRank": 1,
+      "rarityHighlights": [
+        "Bitcoin Form: Crown Fragment",
+        "Role: Warlord of Dust"
+      ]
+    },
+    {
+      "id": "010",
+      "name": "Last War #010",
+      "faction": "Roach Syndicate",
+      "role": "Ash General",
+      "weapon": "Banner Lance",
+      "backdrop": "Reactor Wreck",
+      "bitcoinForm": "Ocular Implant",
+      "description": "The reactor carved holy fractures into his shell, and he believes the war can only end through the last surviving signal.",
+      "image": "./assets/collection/images/last-war-010.svg",
+      "rarityScore": 118.07,
+      "rarityTier": "Mythic",
+      "rarityRank": 2,
+      "rarityHighlights": [
+        "Bitcoin Form: Ocular Implant",
+        "Role: Ash General"
+      ]
+    },
+    {
+      "id": "012",
+      "name": "Last War #012",
+      "faction": "Roach Syndicate",
+      "role": "Temple Breaker",
+      "weapon": "Breaker Hammer",
+      "backdrop": "Wasteland Temple",
+      "bitcoinForm": "Carapace Brand",
+      "description": "He breaks the pillars of old shrines to prove that every idol eventually kneels before hunger and fallout.",
+      "image": "./assets/collection/images/last-war-012.svg",
+      "rarityScore": 115.28,
+      "rarityTier": "Mythic",
+      "rarityRank": 3,
+      "rarityHighlights": [
+        "Bitcoin Form: Carapace Brand",
+        "Backdrop: Wasteland Temple"
+      ]
+    },
+    {
+      "id": "001",
+      "name": "Last War #001",
+      "faction": "Rat Dominion",
+      "role": "Banner Keeper",
+      "weapon": "Bone Banner",
+      "backdrop": "Statue of Liberty Ruin",
+      "bitcoinForm": "Ocular Halo",
+      "description": "The first banner keeper cuts copper from the corpse of Liberty and reforges bitcoin into a sacred war seal.",
+      "image": "./assets/collection/images/last-war-001.svg",
+      "rarityScore": 111.37,
+      "rarityTier": "Legendary",
+      "rarityRank": 4,
+      "rarityHighlights": [
+        "Bitcoin Form: Ocular Halo",
+        "Backdrop: Statue of Liberty Ruin"
+      ]
+    },
+    {
+      "id": "004",
+      "name": "Last War #004",
+      "faction": "Roach Syndicate",
+      "role": "Signal Heretic",
+      "weapon": "Club",
+      "backdrop": "Broken Draft Billboard",
+      "bitcoinForm": "Rear Halo",
+      "description": "Old recruitment boards still flicker in the dark, so he rewrites them into anti-war scripture and wears the signal on his back.",
+      "image": "./assets/collection/images/last-war-004.svg",
+      "rarityScore": 108.98,
+      "rarityTier": "Legendary",
+      "rarityRank": 5,
+      "rarityHighlights": [
+        "Bitcoin Form: Rear Halo",
+        "Headgear: Coil Halo"
+      ]
+    }
+  ]
+}

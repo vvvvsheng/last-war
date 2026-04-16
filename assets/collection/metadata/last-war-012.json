@@ -1,0 +1,105 @@
+{
+  "name": "Last War #012",
+  "description": "He breaks the pillars of old shrines to prove that every idol eventually kneels before hunger and fallout.",
+  "image": "./assets/collection/images/last-war-012.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Roach Syndicate"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Temple Breaker"
+    },
+    {
+      "trait_type": "Species",
+      "value": "roach"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Temple Rig"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Breaker Hammer"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Wasteland Temple"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Carapace Brand"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Shrine Glow"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 115.28
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Mythic"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 3
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Roach Syndicate",
+      "occurrence": 1060,
+      "multiplier": 1,
+      "contribution": 4.38
+    },
+    {
+      "trait_type": "Role",
+      "value": "Temple Breaker",
+      "occurrence": 48,
+      "multiplier": 1.35,
+      "contribution": 20.46
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Temple Rig",
+      "occurrence": 34,
+      "multiplier": 1.2,
+      "contribution": 19.8
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Breaker Hammer",
+      "occurrence": 58,
+      "multiplier": 1.1,
+      "contribution": 15.86
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Wasteland Temple",
+      "occurrence": 24,
+      "multiplier": 1.15,
+      "contribution": 20.54
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Carapace Brand",
+      "occurrence": 48,
+      "multiplier": 1.4,
+      "contribution": 21.22
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Shrine Glow",
+      "occurrence": 46,
+      "multiplier": 0.85,
+      "contribution": 13.02
+    }
+  ]
+}

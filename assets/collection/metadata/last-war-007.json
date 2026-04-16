@@ -1,0 +1,105 @@
+{
+  "name": "Last War #007",
+  "description": "She reads future weather and faction collapse in the grooves of rusted tank tracks, and every prophecy arrives like a siren.",
+  "image": "./assets/collection/images/last-war-007.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Oracle of Rust"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Oracle Wrap"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Stone Axe"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Tank Graveyard"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ear Plate"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Cyan Static"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 104.06
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Legendary"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 7
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Oracle of Rust",
+      "occurrence": 42,
+      "multiplier": 1.35,
+      "contribution": 21.16
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Oracle Wrap",
+      "occurrence": 56,
+      "multiplier": 1.2,
+      "contribution": 17.47
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Stone Axe",
+      "occurrence": 76,
+      "multiplier": 1.1,
+      "contribution": 14.72
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Tank Graveyard",
+      "occurrence": 62,
+      "multiplier": 1.15,
+      "contribution": 16.29
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ear Plate",
+      "occurrence": 94,
+      "multiplier": 1.4,
+      "contribution": 17.6
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Cyan Static",
+      "occurrence": 54,
+      "multiplier": 0.85,
+      "contribution": 12.49
+    }
+  ]
+}

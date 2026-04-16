@@ -1,0 +1,105 @@
+{
+  "name": "Last War #005",
+  "description": "He claims the broken Great Wall as a throne and stitches his crown from spent shells, dead coins, and bone.",
+  "image": "./assets/collection/images/last-war-005.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Warlord of Dust"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Bone Crown"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bone Spear"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Broken Great Wall"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Crown Fragment"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Sand Wake"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 121.6
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Mythic"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 1
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Warlord of Dust",
+      "occurrence": 28,
+      "multiplier": 1.35,
+      "contribution": 23.3
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Bone Crown",
+      "occurrence": 26,
+      "multiplier": 1.2,
+      "contribution": 21.06
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bone Spear",
+      "occurrence": 48,
+      "multiplier": 1.1,
+      "contribution": 16.67
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Broken Great Wall",
+      "occurrence": 30,
+      "multiplier": 1.15,
+      "contribution": 19.53
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Crown Fragment",
+      "occurrence": 26,
+      "multiplier": 1.4,
+      "contribution": 24.56
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Sand Wake",
+      "occurrence": 60,
+      "multiplier": 0.85,
+      "contribution": 12.15
+    }
+  ]
+}

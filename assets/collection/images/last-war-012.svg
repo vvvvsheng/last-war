@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-012" x1="160" y1="120" x2="1040" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#110f0a"/>
+      <stop offset="1" stop-color="#2f2415"/>
+    </linearGradient>
+    <radialGradient id="glow-012" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(530 416) rotate(90) scale(420 360)">
+      <stop stop-color="#f0d967" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#f0d967" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-012" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" rx="56" fill="url(#bg-012)"/>
+  <path d="M0 972L190 924L288 1036L0 1200V972Z" fill="#f77237" opacity="0.14"/>
+  <path d="M1120 0L1200 0V310L1028 220Z" fill="#6dff77" opacity="0.1"/>
+  <circle cx="534" cy="420" r="354" fill="url(#glow-012)"/>
+  <g opacity="0.45" fill="#f0d967"><circle cx="200" cy="180" r="16"/><circle cx="980" cy="228" r="12"/></g>
+  <g opacity="0.22"><path d="M760 780L905 340L1050 780Z" fill="#2f2415"/></g>
+  <g opacity="0.18">
+    <path d="M54 944H1146" stroke="#6dff77" stroke-width="16" stroke-linecap="round" stroke-dasharray="22 28"/>
+    <path d="M0 1142H1200" stroke="#f77237" stroke-width="24"/>
+  </g>
+  <g filter="url(#soft-012)" opacity="0.22">
+    <ellipse cx="560" cy="980" rx="274" ry="70" fill="#000"/>
+  </g>
+  <g><path d="M390 260C425 190 635 190 670 260L646 322H414Z" fill="#f0d967" stroke="#101010" stroke-width="10"/></g>
+  <g>
+    <g>
+      <ellipse cx="530" cy="420" rx="166" ry="154" fill="#6dff77" stroke="#121212" stroke-width="16"/>
+      <path d="M368 418C368 286 450 214 530 214C610 214 692 286 692 418V636H368Z" fill="#f77237" opacity="0.86"/>
+      <path d="M430 670C466 628 594 628 632 670V836H430Z" fill="#f0d967" opacity="0.86" stroke="#121212" stroke-width="12"/>
+      <ellipse cx="474" cy="428" rx="34" ry="56" fill="#fff"/>
+      <ellipse cx="586" cy="428" rx="34" ry="56" fill="#fff"/>
+      <circle cx="474" cy="424" r="14" fill="#121212"/>
+      <circle cx="586" cy="424" r="14" fill="#121212"/>
+      <path d="M454 560C490 528 570 528 606 560L574 612H486Z" fill="#121212"/>
+      <path d="M448 246C424 178 356 150 310 104" stroke="#f0d967" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M612 246C636 178 704 150 750 104" stroke="#f0d967" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M360 594C298 646 268 726 280 814" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M698 594C760 646 792 726 780 814" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M470 700C432 788 430 872 470 948" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M590 700C628 788 630 872 590 948" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <circle cx="270" cy="814" r="24" fill="#f0d967" stroke="#121212" stroke-width="10"/>
+      <circle cx="788" cy="814" r="24" fill="#f0d967" stroke="#121212" stroke-width="10"/>
+    </g>
+  </g>
+  <g><g transform="translate(790 620) rotate(-20)"><rect x="-8" y="-160" width="16" height="270" rx="8" fill="#f77237"/><path d="M-60 -170L62 -144L30 -92L-72 -110Z" fill="#6dff77"/></g></g>
+  <g><g opacity="0.85"><circle cx="530" cy="688" r="40" fill="#6dff77"/><path d="M524 664V710M540 664V710M502 676H548C560 676 566 682 566 690C566 700 560 706 546 706H502M502 676H542C554 676 560 670 560 660C560 650 554 644 542 644H502" stroke="#111" stroke-width="12" stroke-linecap="round"/></g></g>
+  <g opacity="0.9">
+    <rect x="74" y="72" width="292" height="92" rx="24" fill="rgba(7, 7, 7, 0.42)"/>
+    <text x="104" y="126" fill="#6dff77" font-size="52" font-family="Arial, sans-serif" font-weight="700">LAST WAR #012</text>
+  </g>
+  <g opacity="0.88">
+    <rect x="76" y="1028" width="430" height="88" rx="22" fill="rgba(7, 7, 7, 0.46)"/>
+    <text x="104" y="1084" fill="#f0d967" font-size="34" font-family="Arial, sans-serif" font-weight="700">TEMPLE BREAKER</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+{
+  "name": "Last War #009",
+  "description": "He threads cold-wallet fragments from a crashed aircraft into a pendant and carries them toward anyone willing to trade in peace stories.",
+  "image": "./assets/collection/images/last-war-009.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Relic Courier"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Mail Hood"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Short Baton"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Crashed Aircraft"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Cold Wallet Pendant"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Archive Mist"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 88.39
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Rare"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 10
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Relic Courier",
+      "occurrence": 118,
+      "multiplier": 1.35,
+      "contribution": 15.81
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Mail Hood",
+      "occurrence": 104,
+      "multiplier": 1.2,
+      "contribution": 14.62
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Short Baton",
+      "occurrence": 136,
+      "multiplier": 1.1,
+      "contribution": 12.3
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Crashed Aircraft",
+      "occurrence": 84,
+      "multiplier": 1.15,
+      "contribution": 14.95
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Cold Wallet Pendant",
+      "occurrence": 116,
+      "multiplier": 1.4,
+      "contribution": 16.48
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Archive Mist",
+      "occurrence": 120,
+      "multiplier": 0.85,
+      "contribution": 9.9
+    }
+  ]
+}

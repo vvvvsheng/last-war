@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-002" x1="160" y1="120" x2="1040" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090d0a"/>
+      <stop offset="1" stop-color="#24361c"/>
+    </linearGradient>
+    <radialGradient id="glow-002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(530 416) rotate(90) scale(420 360)">
+      <stop stop-color="#7dfa6f" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#7dfa6f" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-002" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" rx="56" fill="url(#bg-002)"/>
+  <path d="M0 972L190 924L288 1036L0 1200V972Z" fill="#536e34" opacity="0.14"/>
+  <path d="M1120 0L1200 0V310L1028 220Z" fill="#c6d45a" opacity="0.1"/>
+  <circle cx="534" cy="420" r="354" fill="url(#glow-002)"/>
+  <g opacity="0.55" fill="#7dfa6f"><circle cx="280" cy="236" r="12"/><circle cx="760" cy="290" r="10"/><circle cx="920" cy="164" r="8"/><circle cx="860" cy="920" r="16"/></g>
+  <g opacity="0.24"><rect x="760" y="250" width="260" height="480" rx="28" fill="#24361c"/><path d="M725 742L920 520L1040 742Z" fill="#536e34"/></g>
+  <g opacity="0.18">
+    <path d="M54 944H1146" stroke="#c6d45a" stroke-width="16" stroke-linecap="round" stroke-dasharray="22 28"/>
+    <path d="M0 1142H1200" stroke="#536e34" stroke-width="24"/>
+  </g>
+  <g filter="url(#soft-002)" opacity="0.22">
+    <ellipse cx="560" cy="980" rx="274" ry="70" fill="#000"/>
+  </g>
+  <g><g><rect x="430" y="220" width="220" height="86" rx="30" fill="#101010" stroke="#7dfa6f" stroke-width="10"/><circle cx="480" cy="306" r="24" fill="#7dfa6f"/><circle cx="598" cy="306" r="24" fill="#7dfa6f"/></g></g>
+  <g>
+    <g>
+      <ellipse cx="530" cy="420" rx="166" ry="154" fill="#c6d45a" stroke="#121212" stroke-width="16"/>
+      <path d="M368 418C368 286 450 214 530 214C610 214 692 286 692 418V636H368Z" fill="#536e34" opacity="0.86"/>
+      <path d="M430 670C466 628 594 628 632 670V836H430Z" fill="#7dfa6f" opacity="0.86" stroke="#121212" stroke-width="12"/>
+      <ellipse cx="474" cy="428" rx="34" ry="56" fill="#fff"/>
+      <ellipse cx="586" cy="428" rx="34" ry="56" fill="#fff"/>
+      <circle cx="474" cy="424" r="14" fill="#121212"/>
+      <circle cx="586" cy="424" r="14" fill="#121212"/>
+      <path d="M454 560C490 528 570 528 606 560L574 612H486Z" fill="#121212"/>
+      <path d="M448 246C424 178 356 150 310 104" stroke="#7dfa6f" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M612 246C636 178 704 150 750 104" stroke="#7dfa6f" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M360 594C298 646 268 726 280 814" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M698 594C760 646 792 726 780 814" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M470 700C432 788 430 872 470 948" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M590 700C628 788 630 872 590 948" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <circle cx="270" cy="814" r="24" fill="#7dfa6f" stroke="#121212" stroke-width="10"/>
+      <circle cx="788" cy="814" r="24" fill="#7dfa6f" stroke="#121212" stroke-width="10"/>
+    </g>
+  </g>
+  <g><g transform="translate(790 620) rotate(-18)"><rect x="-8" y="-150" width="16" height="260" rx="8" fill="#536e34"/><rect x="-54" y="-162" width="108" height="56" rx="14" fill="#c6d45a"/></g></g>
+  <g><g><circle cx="530" cy="660" r="66" fill="#c6d45a" opacity="0.95"/><path d="M524 622V696M542 622V696M494 640H552C566 640 574 648 574 660C574 672 566 680 552 680H494M494 640H546C560 640 568 632 568 620C568 608 558 600 544 600H494" stroke="#111" stroke-width="16" stroke-linecap="round"/></g></g>
+  <g opacity="0.9">
+    <rect x="74" y="72" width="292" height="92" rx="24" fill="rgba(7, 7, 7, 0.42)"/>
+    <text x="104" y="126" fill="#c6d45a" font-size="52" font-family="Arial, sans-serif" font-weight="700">LAST WAR #002</text>
+  </g>
+  <g opacity="0.88">
+    <rect x="76" y="1028" width="430" height="88" rx="22" fill="rgba(7, 7, 7, 0.46)"/>
+    <text x="104" y="1084" fill="#7dfa6f" font-size="34" font-family="Arial, sans-serif" font-weight="700">GAS PRIEST</text>
+  </g>
+</svg>

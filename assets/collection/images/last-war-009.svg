@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-009" x1="160" y1="120" x2="1040" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111312"/>
+      <stop offset="1" stop-color="#1e3135"/>
+    </linearGradient>
+    <radialGradient id="glow-009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(530 416) rotate(90) scale(420 360)">
+      <stop stop-color="#8ef4d2" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#8ef4d2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-009" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" rx="56" fill="url(#bg-009)"/>
+  <path d="M0 972L190 924L288 1036L0 1200V972Z" fill="#f67f40" opacity="0.14"/>
+  <path d="M1120 0L1200 0V310L1028 220Z" fill="#f8d875" opacity="0.1"/>
+  <circle cx="534" cy="420" r="354" fill="url(#glow-009)"/>
+  <g opacity="0.38" fill="#8ef4d2"><circle cx="230" cy="280" r="24"/><circle cx="950" cy="250" r="18"/><circle cx="140" cy="800" r="16"/></g>
+  <g opacity="0.24"><path d="M700 640L1045 510L988 612L1100 660L1068 735L928 690L820 812L768 782L826 690L710 710Z" fill="#1e3135"/></g>
+  <g opacity="0.18">
+    <path d="M54 944H1146" stroke="#f8d875" stroke-width="16" stroke-linecap="round" stroke-dasharray="22 28"/>
+    <path d="M0 1142H1200" stroke="#f67f40" stroke-width="24"/>
+  </g>
+  <g filter="url(#soft-009)" opacity="0.22">
+    <ellipse cx="560" cy="980" rx="274" ry="70" fill="#000"/>
+  </g>
+  <g><path d="M388 300C418 190 642 190 672 300L645 388H415Z" fill="#8ef4d2" stroke="#101010" stroke-width="10"/></g>
+  <g>
+      <g>
+        <circle cx="406" cy="352" r="82" fill="#f67f40" stroke="#121212" stroke-width="14"/>
+        <circle cx="654" cy="352" r="82" fill="#f67f40" stroke="#121212" stroke-width="14"/>
+        <path d="M444 630C356 594 332 500 374 410C416 324 520 286 620 320C720 356 786 466 752 578C718 692 574 746 444 630Z" fill="#f67f40" stroke="#121212" stroke-width="16"/>
+        <ellipse cx="532" cy="430" rx="176" ry="146" fill="#8ef4d2" opacity="0.72"/>
+        <path d="M426 678C464 636 594 636 638 678V818H426Z" fill="#8ef4d2" opacity="0.9" stroke="#121212" stroke-width="12"/>
+        <ellipse cx="476" cy="438" rx="34" ry="56" fill="#fff"/>
+        <ellipse cx="582" cy="438" rx="34" ry="56" fill="#fff"/>
+        <circle cx="476" cy="434" r="14" fill="#121212"/>
+        <circle cx="582" cy="434" r="14" fill="#121212"/>
+        <ellipse cx="530" cy="540" rx="62" ry="46" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+        <path d="M470 540H590" stroke="#121212" stroke-width="10" stroke-linecap="round"/>
+        <path d="M340 554C278 614 252 702 264 790" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M722 550C784 608 814 698 800 790" stroke="#121212" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M386 724C322 780 318 878 382 954" stroke="#ffd9cc" stroke-width="18" stroke-linecap="round"/>
+        <path d="M676 724C742 778 744 874 680 950" stroke="#ffd9cc" stroke-width="18" stroke-linecap="round"/>
+        <circle cx="286" cy="790" r="24" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+        <circle cx="786" cy="790" r="24" fill="#ffd9cc" stroke="#121212" stroke-width="10"/>
+      </g>
+    </g>
+  <g><rect x="782" y="440" width="16" height="290" rx="8" fill="#f67f40"/></g>
+  <g><g><circle cx="530" cy="660" r="66" fill="#f8d875" opacity="0.95"/><path d="M524 622V696M542 622V696M494 640H552C566 640 574 648 574 660C574 672 566 680 552 680H494M494 640H546C560 640 568 632 568 620C568 608 558 600 544 600H494" stroke="#111" stroke-width="16" stroke-linecap="round"/></g></g>
+  <g opacity="0.9">
+    <rect x="74" y="72" width="292" height="92" rx="24" fill="rgba(7, 7, 7, 0.42)"/>
+    <text x="104" y="126" fill="#f8d875" font-size="52" font-family="Arial, sans-serif" font-weight="700">LAST WAR #009</text>
+  </g>
+  <g opacity="0.88">
+    <rect x="76" y="1028" width="430" height="88" rx="22" fill="rgba(7, 7, 7, 0.46)"/>
+    <text x="104" y="1084" fill="#8ef4d2" font-size="34" font-family="Arial, sans-serif" font-weight="700">RELIC COURIER</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+{
+  "name": "Last War #001",
+  "description": "The first banner keeper cuts copper from the corpse of Liberty and reforges bitcoin into a sacred war seal.",
+  "image": "./assets/collection/images/last-war-001.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Banner Keeper"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Spike Crown"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bone Banner"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Statue of Liberty Ruin"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ocular Halo"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Acid Bloom"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 111.37
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Legendary"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 4
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Banner Keeper",
+      "occurrence": 74,
+      "multiplier": 1.35,
+      "contribution": 18.2
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Spike Crown",
+      "occurrence": 44,
+      "multiplier": 1.2,
+      "contribution": 18.59
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bone Banner",
+      "occurrence": 40,
+      "multiplier": 1.1,
+      "contribution": 17.45
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Statue of Liberty Ruin",
+      "occurrence": 28,
+      "multiplier": 1.15,
+      "contribution": 19.84
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Ocular Halo",
+      "occurrence": 40,
+      "multiplier": 1.4,
+      "contribution": 22.21
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Acid Bloom",
+      "occurrence": 92,
+      "multiplier": 0.85,
+      "contribution": 10.75
+    }
+  ]
+}

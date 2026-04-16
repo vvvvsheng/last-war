@@ -1,0 +1,105 @@
+{
+  "name": "Last War #003",
+  "description": "The miners break dead rigs into armor and keep digging through ash for a faith that no longer behaves like value.",
+  "image": "./assets/collection/images/last-war-003.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Ash Miner"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Miner Cap"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Rust Wrench"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Bitcoin Pit"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Shoulder Sigil"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Ember Dust"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 82.89
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Uncommon"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 11
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Ash Miner",
+      "occurrence": 168,
+      "multiplier": 1.35,
+      "contribution": 14.03
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Miner Cap",
+      "occurrence": 180,
+      "multiplier": 1.2,
+      "contribution": 12.17
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Rust Wrench",
+      "occurrence": 142,
+      "multiplier": 1.1,
+      "contribution": 12.12
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Bitcoin Pit",
+      "occurrence": 76,
+      "multiplier": 1.15,
+      "contribution": 15.39
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Shoulder Sigil",
+      "occurrence": 138,
+      "multiplier": 1.4,
+      "contribution": 15.57
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Ember Dust",
+      "occurrence": 146,
+      "multiplier": 0.85,
+      "contribution": 9.28
+    }
+  ]
+}

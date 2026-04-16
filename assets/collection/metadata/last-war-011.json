@@ -1,0 +1,105 @@
+{
+  "name": "Last War #011",
+  "description": "Every burned history becomes dust in his pockets, and wherever he walks, a new version of memory starts again.",
+  "image": "./assets/collection/images/last-war-011.svg",
+  "external_url": "https://github.com/your-name/last-war",
+  "attributes": [
+    {
+      "trait_type": "Faction",
+      "value": "Rat Dominion"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Archive Smuggler"
+    },
+    {
+      "trait_type": "Species",
+      "value": "rat"
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Scribe Cloth"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Wood Staff"
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Burned Library"
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Saint Coin"
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Archive Dust"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Rarity Score",
+      "value": 102.16
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Legendary"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Genesis Rank",
+      "value": 8
+    }
+  ],
+  "rarity_breakdown": [
+    {
+      "trait_type": "Species",
+      "value": "Rat Dominion",
+      "occurrence": 1080,
+      "multiplier": 1,
+      "contribution": 4.33
+    },
+    {
+      "trait_type": "Role",
+      "value": "Archive Smuggler",
+      "occurrence": 66,
+      "multiplier": 1.35,
+      "contribution": 18.8
+    },
+    {
+      "trait_type": "Headgear",
+      "value": "Scribe Cloth",
+      "occurrence": 88,
+      "multiplier": 1.2,
+      "contribution": 15.38
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Wood Staff",
+      "occurrence": 126,
+      "multiplier": 1.1,
+      "contribution": 12.61
+    },
+    {
+      "trait_type": "Backdrop",
+      "value": "Burned Library",
+      "occurrence": 54,
+      "multiplier": 1.15,
+      "contribution": 16.9
+    },
+    {
+      "trait_type": "Bitcoin Form",
+      "value": "Saint Coin",
+      "occurrence": 34,
+      "multiplier": 1.4,
+      "contribution": 23.09
+    },
+    {
+      "trait_type": "Aura",
+      "value": "Archive Dust",
+      "occurrence": 84,
+      "multiplier": 0.85,
+      "contribution": 11.05
+    }
+  ]
+}
