@@ -17,6 +17,7 @@ const mintConfig = {
 const mintDom = {
   connectButton: document.getElementById("connect-wallet-button"),
   walletAddress: document.getElementById("wallet-address"),
+  walletSubcopy: document.getElementById("wallet-subcopy"),
   phaseBadge: document.getElementById("mint-phase-badge"),
   phaseName: document.getElementById("phase-name"),
   phaseCopy: document.getElementById("phase-copy"),
@@ -40,10 +41,49 @@ const mintDom = {
   decreaseQty: document.getElementById("decrease-qty"),
   increaseQty: document.getElementById("increase-qty"),
   previewGrid: document.getElementById("mint-preview-grid"),
+  walletModal: document.getElementById("wallet-modal"),
+  walletModalBackdrop: document.getElementById("wallet-modal-backdrop"),
+  walletModalClose: document.getElementById("wallet-modal-close"),
+  walletOptionList: document.getElementById("wallet-option-list"),
 };
 
 let connectedAddress = "";
 let quantity = 1;
+let connectedWalletLabel = "";
+let activeProvider = null;
+
+const walletOptions = [
+  {
+    id: "metamask",
+    name: "MetaMask",
+    description: "Popular browser wallet for Ethereum and EVM chains.",
+    match: (provider) => Boolean(provider?.isMetaMask),
+  },
+  {
+    id: "okx",
+    name: "OKX Wallet",
+    description: "Multi-chain wallet extension with EVM support.",
+    match: (provider) => Boolean(provider?.isOkxWallet || provider?.isOKExWallet),
+  },
+  {
+    id: "rabby",
+    name: "Rabby",
+    description: "Power-user EVM wallet with clear transaction previews.",
+    match: (provider) => Boolean(provider?.isRabby),
+  },
+  {
+    id: "coinbase",
+    name: "Coinbase Wallet",
+    description: "Coinbase browser wallet extension.",
+    match: (provider) => Boolean(provider?.isCoinbaseWallet),
+  },
+  {
+    id: "browser",
+    name: "Browser Wallet",
+    description: "Fallback for any injected EVM wallet in this browser.",
+    match: () => true,
+  },
+];
 
 function logMint(message) {
   if (!mintDom.mintLog) return;
@@ -53,6 +93,87 @@ function logMint(message) {
 function formatAddress(address) {
   if (!address) return "Not connected";
   return `${address.slice(0, 6)}...${address.slice(-4)}`;
+}
+
+function getInjectedProviders() {
+  if (!window.ethereum) return [];
+  if (Array.isArray(window.ethereum.providers) && window.ethereum.providers.length > 0) {
+    return window.ethereum.providers;
+  }
+  return [window.ethereum];
+}
+
+function walletProvider(option) {
+  const providers = getInjectedProviders();
+  return providers.find((provider) => option.match(provider)) ?? null;
+}
+
+function walletInstalled(option) {
+  return option.id === "browser" ? getInjectedProviders().length > 0 : Boolean(walletProvider(option));
+}
+
+function showWalletModal() {
+  if (!mintDom.walletModal) return;
+  renderWalletOptions();
+  mintDom.walletModal.classList.remove("hidden");
+  mintDom.walletModal.setAttribute("aria-hidden", "false");
+}
+
+function hideWalletModal() {
+  if (!mintDom.walletModal) return;
+  mintDom.walletModal.classList.add("hidden");
+  mintDom.walletModal.setAttribute("aria-hidden", "true");
+}
+
+function renderWalletOptions() {
+  if (!mintDom.walletOptionList) return;
+
+  const nodes = walletOptions.map((option) => {
+    const installed = walletInstalled(option);
+    const button = document.createElement("button");
+    button.className = "wallet-option-button";
+    button.type = "button";
+    button.disabled = !installed;
+    button.innerHTML = `
+      <span class="wallet-option-head">
+        <strong>${option.name}</strong>
+        <em>${installed ? "Installed" : "Not detected"}</em>
+      </span>
+      <span class="wallet-option-copy">${option.description}</span>
+    `;
+    button.addEventListener("click", () => connectWallet(option));
+    return button;
+  });
+
+  mintDom.walletOptionList.replaceChildren(...nodes);
+}
+
+function bindProvider(provider) {
+  if (!provider?.on) return;
+
+  provider.removeListener?.("accountsChanged", handleAccountsChanged);
+  provider.removeListener?.("chainChanged", handleChainChanged);
+  provider.on("accountsChanged", handleAccountsChanged);
+  provider.on("chainChanged", handleChainChanged);
+}
+
+function handleAccountsChanged(accounts) {
+  connectedAddress = accounts?.[0] ?? "";
+  mintDom.walletAddress.textContent = formatAddress(connectedAddress);
+  mintDom.connectButton.textContent = connectedAddress
+    ? `${connectedWalletLabel || "Wallet"} Connected`
+    : "Connect Wallet";
+  mintDom.walletSubcopy.textContent = connectedAddress
+    ? `${connectedWalletLabel || "Wallet"} is active in this browser.`
+    : "Choose a wallet to connect.";
+}
+
+function handleChainChanged(chainId) {
+  if (chainId !== mintConfig.chainId) {
+    logMint(`Connected wallet switched to ${chainId}. Change back to ${mintConfig.chainName} before minting.`);
+    return;
+  }
+  logMint(`Connected wallet is on ${mintConfig.chainName}.`);
 }
 
 function isContractConfigured() {
@@ -104,32 +225,45 @@ function updateCountdown() {
   mintDom.countdownCaption.textContent = `Configured public mint date: May 21, 2026 20:00 GMT+8`;
 }
 
-async function connectWallet() {
+async function connectWallet(option) {
   if (!window.ethereum) {
-    logMint("No injected wallet detected. Install MetaMask or another EVM wallet to test the mint console.");
+    logMint("No injected wallet detected. Install MetaMask, OKX, Rabby, Coinbase Wallet, or another EVM wallet first.");
+    return;
+  }
+
+  const selectedOption = option ?? walletOptions.find((item) => walletInstalled(item));
+  const provider = selectedOption ? walletProvider(selectedOption) : null;
+
+  if (!selectedOption || !provider) {
+    logMint("No supported injected wallet was found. Install one of the listed wallets and try again.");
     return;
   }
 
   try {
-    const chainId = await window.ethereum.request({ method: "eth_chainId" });
+    const chainId = await provider.request({ method: "eth_chainId" });
     if (chainId !== mintConfig.chainId) {
       logMint(`Wallet connected on ${chainId}. Switch to ${mintConfig.chainName} before minting.`);
     }
 
-    const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+    const accounts = await provider.request({ method: "eth_requestAccounts" });
+    activeProvider = provider;
+    connectedWalletLabel = selectedOption.name;
     connectedAddress = accounts?.[0] ?? "";
     mintDom.walletAddress.textContent = formatAddress(connectedAddress);
-    mintDom.connectButton.textContent = connectedAddress ? "Wallet Connected" : "Connect Wallet";
-    logMint(`Wallet connected: ${formatAddress(connectedAddress)}.`);
+    mintDom.walletSubcopy.textContent = `${selectedOption.name} is active in this browser.`;
+    mintDom.connectButton.textContent = connectedAddress ? `${selectedOption.name} Connected` : "Connect Wallet";
+    bindProvider(provider);
+    hideWalletModal();
+    logMint(`${selectedOption.name} connected: ${formatAddress(connectedAddress)}.`);
   } catch (error) {
-    logMint(`Wallet connection failed: ${error?.message ?? "Unknown error"}`);
+    logMint(`${selectedOption.name} connection failed: ${error?.message ?? "Unknown error"}`);
   }
 }
 
 function handleMintAttempt() {
   if (!connectedAddress) {
-    logMint("Connect a wallet before minting.");
-    connectWallet();
+    logMint("Choose a wallet before minting.");
+    showWalletModal();
     return;
   }
 
@@ -171,10 +305,13 @@ mintDom.increaseQty?.addEventListener("click", () => {
   updateMintTotals();
 });
 
-mintDom.connectButton?.addEventListener("click", connectWallet);
+mintDom.connectButton?.addEventListener("click", showWalletModal);
 mintDom.mintButton?.addEventListener("click", handleMintAttempt);
+mintDom.walletModalClose?.addEventListener("click", hideWalletModal);
+mintDom.walletModalBackdrop?.addEventListener("click", hideWalletModal);
 
 updateStaticMintInfo();
 updateCountdown();
 renderRarePreview();
+renderWalletOptions();
 window.setInterval(updateCountdown, 60_000);

@@ -92,6 +92,7 @@
             <div>
               <span class="mint-console-label">Wallet</span>
               <strong id="wallet-address">Not connected</strong>
+              <p class="mint-wallet-subcopy" id="wallet-subcopy">Choose a wallet to connect.</p>
             </div>
             <button class="primary-button" id="connect-wallet-button" type="button">
               Connect Wallet
@@ -192,6 +193,25 @@
         <a href="./scripts/generate-collection.mjs">Generator</a>
       </div>
     </footer>
+
+    <div class="wallet-modal hidden" id="wallet-modal" aria-hidden="true">
+      <div class="wallet-modal-backdrop" id="wallet-modal-backdrop"></div>
+      <div class="wallet-modal-card" role="dialog" aria-modal="true" aria-labelledby="wallet-modal-title">
+        <div class="wallet-modal-header">
+          <div>
+            <span class="mint-console-label">Wallet Selector</span>
+            <h2 id="wallet-modal-title">Choose Wallet</h2>
+          </div>
+          <button class="wallet-modal-close" id="wallet-modal-close" type="button" aria-label="Close wallet selector">
+            x
+          </button>
+        </div>
+        <p class="wallet-modal-copy">
+          Pick one of the supported EVM wallets installed in this browser. If a wallet is missing, install its extension first and reopen the selector.
+        </p>
+        <div class="wallet-option-list" id="wallet-option-list"></div>
+      </div>
+    </div>
 
     <script src="./assets/collection/manifest.js"></script>
     <script src="./mint.js"></script>
